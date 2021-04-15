@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_81203" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="身長を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MfM-mf-VBV">
+                                <rect key="frame" x="134" y="184" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nyR-ai-uDd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="体重を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iIa-tv-65z">
+                                <rect key="frame" x="136" y="262" width="96" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NzN-jX-Ds6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxU-iW-L8c">
+                                <rect key="frame" x="114" y="391" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="UxY-j7-0Is"/>
+                                </constraints>
+                                <state key="normal" title="計算"/>
+                                <connections>
+                                    <action selector="keisan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZj-Dr-W7P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsq-1m-P9b">
+                                <rect key="frame" x="9" y="560" width="350" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSg-Z5-Ahx">
+                                <rect key="frame" x="249" y="189" width="24" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="F6y-an-UPC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYh-eX-lg2">
+                                <rect key="frame" x="220" y="391" width="73" height="30"/>
+                                <state key="normal" title="リセット"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NT2-2I-ZPu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9T-l9-Eij">
+                                <rect key="frame" x="249" y="267" width="28" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="iIa-tv-65z" firstAttribute="top" secondItem="MfM-mf-VBV" secondAttribute="bottom" constant="48" id="1FA-zl-tue"/>
+                            <constraint firstItem="iIa-tv-65z" firstAttribute="centerX" secondItem="gsq-1m-P9b" secondAttribute="centerX" id="4hL-Ld-Cgw"/>
+                            <constraint firstItem="hxU-iW-L8c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="5Yj-IA-WxQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vYh-eX-lg2" secondAttribute="trailing" constant="82" id="7zg-rN-pXp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gsq-1m-P9b" secondAttribute="bottom" constant="169" id="IbW-1t-ZKc"/>
+                            <constraint firstItem="MfM-mf-VBV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="Ied-Dz-rPs"/>
+                            <constraint firstItem="iIa-tv-65z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="Jei-rQ-fOa"/>
+                            <constraint firstItem="iIa-tv-65z" firstAttribute="centerY" secondItem="T9T-l9-Eij" secondAttribute="centerY" constant="-0.5" id="Len-l1-rt1"/>
+                            <constraint firstItem="vYh-eX-lg2" firstAttribute="leading" secondItem="hxU-iW-L8c" secondAttribute="trailing" constant="75" id="OGh-k4-AZF"/>
+                            <constraint firstItem="vYh-eX-lg2" firstAttribute="top" secondItem="T9T-l9-Eij" secondAttribute="bottom" constant="103" id="PQ3-On-hxA"/>
+                            <constraint firstItem="ZSg-Z5-Ahx" firstAttribute="leading" secondItem="MfM-mf-VBV" secondAttribute="trailing" constant="15" id="Pjl-Tb-JaK"/>
+                            <constraint firstItem="ZSg-Z5-Ahx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="RH0-pd-v3v"/>
+                            <constraint firstItem="MfM-mf-VBV" firstAttribute="centerX" secondItem="iIa-tv-65z" secondAttribute="centerX" id="XdE-SC-jXd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T9T-l9-Eij" secondAttribute="trailing" constant="98" id="a8n-SO-9Nl"/>
+                            <constraint firstItem="T9T-l9-Eij" firstAttribute="top" secondItem="ZSg-Z5-Ahx" secondAttribute="bottom" constant="57" id="aGZ-ai-lgR"/>
+                            <constraint firstItem="gsq-1m-P9b" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cow-ri-MQf"/>
+                            <constraint firstItem="gsq-1m-P9b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="dkF-Pf-0dj"/>
+                            <constraint firstItem="ZSg-Z5-Ahx" firstAttribute="leading" secondItem="T9T-l9-Eij" secondAttribute="leading" id="gJC-f7-qiF"/>
+                            <constraint firstItem="MfM-mf-VBV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="j42-Eq-Kpu"/>
+                            <constraint firstItem="hxU-iW-L8c" firstAttribute="top" secondItem="iIa-tv-65z" secondAttribute="bottom" constant="99" id="kQK-DU-Mbg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pJb-S1-lWT" appends="YES" id="6X6-EZ-z7n"/>
+                        </connections>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="result" destination="gsq-1m-P9b" id="Tnh-Cv-36l"/>
+                        <outlet property="shintyo" destination="MfM-mf-VBV" id="yqr-E4-CbP"/>
+                        <outlet property="taiju" destination="iIa-tv-65z" id="7UB-Ke-rTP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pJb-S1-lWT">
+                    <connections>
+                        <action selector="tapView:" destination="BYZ-38-t0r" id="y4I-Tb-N9F"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.74384236453201"/>
+        </scene>
+    </scenes>
+</document>
